@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { getAccessToken } = require('./auth'); // Ajusta la ruta al archivo donde está tu función
+const { getAccessToken } = require('./auth');
 
 async function searchOffers(origin, destination, departureDate, returnDate) {
     const accessToken = await getAccessToken();
