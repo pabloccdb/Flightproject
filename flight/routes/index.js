@@ -1,12 +1,8 @@
 var express = require('express');
 var router = express.Router();
+const flightsRouter = require('./flights');
 
-router.post('/api/data', function(req, res, next) {
-  const data = req.body;
-  res.json({
-    message: 'Datos recibidos',
-    data
-  });
-});
+router.use('/api', flightsRouter);
+
 
 module.exports = router;
