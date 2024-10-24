@@ -1,5 +1,5 @@
 const express = require('express');
-const { searchAdvancedOffers, searchOffers } = require('../services/flights'); // Ajusta la ruta al archivo donde está tu función
+const { searchAdvancedOffers, searchOffers } = require('../services/flights');
 const router = express.Router();
 
 
